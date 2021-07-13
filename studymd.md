@@ -66,6 +66,14 @@ coding - run - deploy
 - state나 props가 바뀌면 render함수가 다시 호출됨. >> 그럼 밑에 컴포넌트 안의 render도 다시 호출되면서 
 
   웹사이트를 다시 그림
+  
+- 하위 컴포넌트가 상위 컴포넌트를 명령할때는 event를 통해서 한다.
+
+- 상위 컴포넌트가 하위 컴포넌트를 명령할때는 props를 통해 전달.
+
+### redux
+
+- store를 통해 다 저장해서 가져다 씀.
 
 ### this
 
@@ -75,6 +83,11 @@ coding - run - deploy
 
 - 동적으로 처리할때 this.state.mode = 'welcome' 해버리면 리액트가 인식을 못함
 - this.setState(객체) 형태로 하여 바꿔줘야함 >> this.setState({mode:'welcome'})
+
+```react
+// this.state.mode = 'welcome';
+// 위의 코드는 두가지 문제를 일으킴 bind(this)필요, setState필요
+```
 
 
 
