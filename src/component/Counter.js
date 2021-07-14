@@ -1,4 +1,13 @@
 import { Component } from 'react';
+
+// const Problemmatic = () => {
+//     throw (new Error('버그가 나타났다!'));
+//     return (
+//         <div>
+            
+//         </div>
+//     );
+// }
 class Counter extends Component {
     constructor(props) {
         super(props);
@@ -7,7 +16,8 @@ class Counter extends Component {
         this.handleIncrease = this.handleIncrease.bind(this);
         // state 초기 할당하는 곳 setState 사용안댐
         this.state = {
-            number: 0
+            number: 0,
+            error : false
         }
     }
 
@@ -37,14 +47,25 @@ class Counter extends Component {
             number: this.state.number - 1
         });
     }
+    componentDidCatch(error, info) {
+        console.log('componentDidCatch');
+        this.setState({
+            error : true
+        });
+    }
     render() {
         console.log('render')
+        if (this.state.error) return (
+            <h1>에러발생!</h1>
+        );
         console.log(this)
+        
         return (
             <div>
                 <h1>State</h1>
                 <h2>Count</h2>
                 <h3>값 : {this.state.number}</h3>
+                {/* { this.state.number === 8 && <Problemmatic /> } */}
                 <button onClick={this.handleIncrease}>Plus</button>
                 <button onClick={this.handleDecrease}>Minus</button>
                 <hr />

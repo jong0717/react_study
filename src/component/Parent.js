@@ -8,7 +8,9 @@ class Parent extends Component {
             count : 0
         };
     }
-
+    componentDidUpdate(prevProps, prevState) {
+        console.log('componentDidUpdate');
+    }
     parentsCount() {
         this.setState({
             count : this.state.count + 1
