@@ -3,8 +3,8 @@ import './App.css';
 // import Content from "./component/Content"
 // import Subject from './component/Subject';
 import { Component } from 'react';
-import HelloWorld from "./component/HelloWorld";
-import Counter from "./component/Counter";
+// import HelloWorld from "./component/HelloWorld";
+// import Counter from "./component/Counter";
 import Parent from './component/Parent';
 class App extends Component {
   constructor(props) {
@@ -21,9 +21,7 @@ class App extends Component {
       ],
       selected_content_id : 1,
     }
-
   }
-
   render() {
     // console.log('App render');
     // let _title, _desc = null;
@@ -63,8 +61,8 @@ class App extends Component {
           data = {this.state.contents}
           ></TOC>
           <Content title={_title} desc={_desc}></Content> */}
-          <HelloWorld title="helloworld" value="1" name="hong"></HelloWorld>
-          <Counter></Counter>
+          {/* <HelloWorld title="helloworld" value="1" name="hong"></HelloWorld> */}
+          {/* <Counter></Counter> */}
           <Parent></Parent>
       </div>
     );
