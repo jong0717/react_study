@@ -215,3 +215,14 @@ coding - run - deploy
 - componentDidCatch : 만약에 에러가 발생하면 잡아줄때 호출 / 사용자에게는 메시지를 통해 상황을 알리고, 개발자에게는 에러 정보를 전달하는 함수. 
 
   > 중요 : error가 발생하는 컴포넌트의 부모 컴포넌트에 함수를 작성해서 처리한다.
+
+## 21.07.15
+
+### LifeCycle
+
+![image-20210715105937423](C:\Users\PC\Documents\react-app\studymd.assets\image-20210715105937423.png)
+
+- 직접 만들어본 라이프사이클 흐름
+
+![image-20210715131016914](C:\Users\PC\Documents\react-app\studymd.assets\image-20210715131016914.png)
+
