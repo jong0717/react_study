@@ -13,9 +13,9 @@ class Parent extends Component {
 
     componentDidMount() {
         console.log('부모 컴포넌트 => componentDidMount 호출');
-        this.setState({
-            hasDestroyed : true
-        });
+        // this.setState({
+        //     hasDestroyed : true
+        // });
     }
     componentDidUpdate(prevProps, prevState) {
         console.log('부모 컴포넌트 => componentDidUpdate 호출');
@@ -34,13 +34,13 @@ class Parent extends Component {
         console.log('부모 컴포넌트 => render 호출', this.state);
         return (
             <div>
-                {/* <h1>하위컴포넌트에서 값 변경하기</h1>
+                <h1>하위컴포넌트에서 값 변경하기</h1>
                 <Children parentsCount={this.parentsCount}></Children>
                 <p>상위 컴포넌트 : {this.state.count}</p>
-                <hr /> */}
-                <React.Fragment>
+                <hr />
+                {/* <React.Fragment>
                     {this.state.hasDestroyed ? null : <Children />}
-                </React.Fragment>
+                </React.Fragment> */}
             </div>
         )
     }

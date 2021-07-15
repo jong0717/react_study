@@ -32,8 +32,8 @@ class Children extends Component {
         // console.log(this.props)
         return (
             <div>
-                {/* <button onClick={this.props.parentsCount}>자식 컴포넌트 : 1add</button>
-                <button onClick={this.handleIncrease}>자식 업데이트 : {this.state.number}</button> */}
+                <button onClick={this.props.parentsCount}>자식 컴포넌트 : 1add</button>
+                <button onClick={this.handleIncrease}>자식 업데이트 : {this.state.number}</button>
                 <Descendant />
             </div>
         )
