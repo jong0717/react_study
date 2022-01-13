@@ -2,7 +2,7 @@
 import './App.css';
 import Component from './component/3-14.PropTypes/Component';
 // import Example from './component/3-11.Portal/Example';
-// import Memo from './component/3-8.Memoization/Memo';
+import Memo from './component/3-8.Memoization/Memo';
 // import Dialog from './component/3-6.Composition2/Dialog';
 // import ThankyouDialog from './component/3-6.Composition2/ThankyouDialog';
 // import Button from './component/3-7.HOC/Button';
@@ -23,9 +23,9 @@ import Component from './component/3-14.PropTypes/Component';
 function App() {
   return (
     <div className="App">
-      <Component />
+      {/* <Component /> */}
       {/* <Example /> */}
-      {/* <Memo /> */}
+      <Memo />
       {/* <Input />
       <br/> 
       <br/>
