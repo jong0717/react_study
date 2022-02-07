@@ -3,8 +3,10 @@ import './App.css';
 import Component from './component/3-14.PropTypes/Component';
 // import Example from './component/3-11.Portal/Example';
 import Memo from './component/3-8.Memoization/Memo';
-// import Dialog from './component/3-6.Composition2/Dialog';
-// import ThankyouDialog from './component/3-6.Composition2/ThankyouDialog';
+import Dialog from './component/3-5.Composition/Dialog';
+
+import ThankyouDialog from './component/3-6.Composition2/ThankyouDialog';
+import CustomDialog from './component/3-5.Composition/CustomDialog';
 // import Button from './component/3-7.HOC/Button';
 // import Input from './component/3-7.HOC/Input';
 // import ControlledComponent from './component/2-10.Form/ControlledComponent';
@@ -25,7 +27,7 @@ function App() {
     <div className="App">
       {/* <Component /> */}
       {/* <Example /> */}
-      <Memo />
+      {/* <Memo /> */}
       {/* <Input />
       <br/> 
       <br/>
@@ -43,6 +45,8 @@ function App() {
       <ClassComponent /> 
       <Extraction /> 
       <Composition /> */}
+      <CustomDialog />
+      <Dialog />
     </div>
   );
 }
