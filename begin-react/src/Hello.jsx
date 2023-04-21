@@ -1,15 +1,19 @@
-import React from 'react'
+import React, { Component } from 'react';
 
-export default function Hello({color, name, isSpecial}) {
-  return (
-    <h1 style={{color, name, isSpecial}}>
-      { isSpecial && <strong>*</strong>}
-      안녕하세요, {name}
-      </h1>
-  )
+class Hello extends Component {
+  render() {
+    const { color, name, isSpecial } = this.props;
+    return (
+      <div style={{ color }}>
+        {isSpecial && <b>*</b>}
+        안녕하세요 {name}
+      </div>
+    );
+  }
 }
 
-// props 없을때 기본값설정
 Hello.defaultProps = {
   name: '이름없음'
-}
+};
+
+export default Hello;
